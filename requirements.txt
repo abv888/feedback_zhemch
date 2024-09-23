@@ -1,0 +1,6 @@
+aiogram
+gspread
+oauth2client
+qrcode
+aiohttp
+python-dotenv
