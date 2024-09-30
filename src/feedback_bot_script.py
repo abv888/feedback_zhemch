@@ -152,7 +152,7 @@ async def process_answer(message: types.Message):
         await new_state.update_data(current_question=current_question + 1)
     else:
         # Если вопросы закончились, сохраняем ответы
-        row = [str(message.from_user.id)] + answers
+        row = answers
         sheet.append_row(row)
         await message.answer("Спасибо за прохождение опроса!")
         await new_state.clear()
